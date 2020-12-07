@@ -28,7 +28,7 @@ public class Flow {
 		
 		discount=service.calculatePrice(b1, custType);
 		
-		System.out.println("Discount price for Customer Type"+custType+" is "+discount);
+		System.out.println("Discount price for Customer Type "+custType+" is "+discount);
 		
 		
 		
