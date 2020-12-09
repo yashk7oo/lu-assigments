@@ -11,10 +11,13 @@ public class Application {
           
 		
 		File file = new File("professor.scr");
+		ProfessorService service = new ProfessorService();
+		int key=2;
 		
+		if(key==1) {
 		Professor prof= new Professor(3838,"Suresh","ECE","phd");
 		
-		ProfessorService service = new ProfessorService();
+		
 		
 		boolean result = service.writeObjectToFile(prof, file);
 		
@@ -22,10 +25,17 @@ public class Application {
 			System.out.println("One-object Serialized");
 		} else {
 			System.out.println("Check Exception");
-		}
-				
+		}			
 		
-				
+		}
+		if(key == 2) {
+			Professor prof = (Professor)service.readObjectFromFile(file);
+			System.out.println("Deserialized professor :="+prof.getFirstName());
+		}
+		
+		
 	}
+	
+	
 
 }

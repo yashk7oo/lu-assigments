@@ -51,6 +51,9 @@ public class Professor implements Serializable {
 	public void setQualification(String qualification) {
 		this.qualification = qualification;
 	}
+	
+	
+	
 	 
 	
 	 
