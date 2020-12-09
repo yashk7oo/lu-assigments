@@ -3,6 +3,7 @@ package com.example.demo.services;
 import java.io.*;
 
 import com.example.demo.*;
+import com.example.model.Professor;
 
 public class ProfessorService {
 

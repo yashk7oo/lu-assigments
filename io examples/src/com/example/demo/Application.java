@@ -1,9 +1,9 @@
-package com.example.model;
+package com.example.demo;
 
 import java.io.*;
 
-import com.example.demo.Professor;
 import com.example.demo.services.*;
+import com.example.model.Professor;
 
 public class Application {
 
