@@ -7,7 +7,7 @@ public class Professor implements Serializable {
 	 private int id;
 	 private String firstName;
 	 private String department;
-	 private String qualification;
+	 transient private String qualification;
 	/**
 	 * 
 	 */
@@ -51,6 +51,13 @@ public class Professor implements Serializable {
 	public void setQualification(String qualification) {
 		this.qualification = qualification;
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return id+ "," + firstName + "," +department+ "," +qualification;
+	}
+	
+	
 	
 	
 	
