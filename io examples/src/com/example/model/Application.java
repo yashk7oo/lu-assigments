@@ -37,12 +37,21 @@ public class Application {
 		if(key == 3) {
 			Professor suresh= new Professor(3838,"Suresh","ECE","phd");
 			Professor manish= new Professor(2838,"Manish","Mech","pg");
+			Professor rajesh= new Professor(2833,"Rajesh","CSE","phd");
+			Professor rakesh= new Professor(2834,"Rakesh","IT","pg");
+			Professor brijesh= new Professor(2678,"Brijesh","EEE","pg");	
 			
-			System.out.println("Is added :="+service.writeTotextFile(manish,textFile));
+			
+			
 			System.out.println("Is added :="+service.writeTotextFile(suresh,textFile));
+			System.out.println("Is added :="+service.writeTotextFile(manish,textFile));
+			System.out.println("Is added :="+service.writeTotextFile(rajesh,textFile));
+			System.out.println("Is added :="+service.writeTotextFile(rakesh,textFile));
+			System.out.println("Is added :="+service.writeTotextFile(brijesh,textFile));
 		}
 		if(key==4) {
 			Professor[] list = service.readFromTextFile(textFile);
+			System.out.println(list.length);
 			
 			for(Professor eachProf: list) {
 				if(eachProf!=null) {

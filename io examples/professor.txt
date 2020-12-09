@@ -1,0 +1,5 @@
+3838,Suresh,ECE,phd
+2838,Manish,Mech,pg
+2833,Rajesh,CSE,phd
+2834,Rakesh,IT,pg
+2678,Brijesh,EEE,pg

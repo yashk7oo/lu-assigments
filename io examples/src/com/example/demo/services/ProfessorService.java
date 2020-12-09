@@ -50,7 +50,8 @@ public class ProfessorService {
 		return result;
 	}
 		public Professor[] readFromTextFile(File file) {
-			Professor[] list = new Professor[10];
+			Professor[] list = new Professor[4];
+			Professor newList[] = list;
 			
 			
 			
@@ -64,8 +65,17 @@ public class ProfessorService {
 					String[] values= line.split(",");
 					Professor prof= new Professor(Integer.parseInt(values[0]),values[1],values[2],values[3]);
 					list[i]=prof;
-					i++;
 					
+					
+					if(i == (list.length-1)) {
+						 System.arraycopy(list, 0, newList, 0, list.length);
+						  list = new Professor[list.length*2];
+						  System.arraycopy(newList, 0, list, 0, newList.length);
+						  newList = list;
+						
+					}
+						
+					i++;
 				}
 				
 			}catch(IOException e) {
