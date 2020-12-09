@@ -1,6 +1,6 @@
 package com.training.utils;
 
-import java.security.KeyStore.TrustedCertificateEntry;
+import java.io.IOException;
 
 public class ExceptionHandling {
 	
@@ -58,4 +58,12 @@ public class ExceptionHandling {
 	return length;
 
 }
+	
+	public static void usingThrowAndThrowsClause() throws IOException {
+		System.in.read();
+	}
+	
+	public static void usingThrow() {
+		throw new RuntimeException("Hee Hee");
+	}
 }
