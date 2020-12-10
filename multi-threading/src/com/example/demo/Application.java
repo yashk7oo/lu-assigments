@@ -8,6 +8,9 @@ public class Application {
 		new CountingManager(100, "Hundred Count");
 		new CountingManager(1000, "Thousand Count");
 		
+		CountingManager mgr = new CountingManager(10,"abv");
+		mgr.run();
+		
 
 	}
 

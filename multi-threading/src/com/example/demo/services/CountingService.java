@@ -16,7 +16,7 @@ public class CountingService {
     	for(int i=0;i<=countUpTo;i++) {
     			sum += i;
     	}
-    	System.out.println("Called By Thred :="+Thread.currentThread().getName()+" := "+sum);
+    	System.out.println("Called By Thread :="+Thread.currentThread().getName()+" := "+sum);
     	
     }
 	
