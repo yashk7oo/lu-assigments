@@ -1,5 +1,5 @@
 package com.training.utils;
-import com.training.Student;
+
 
 public class RangeCheckException extends java.lang.Exception {
 	private String message;

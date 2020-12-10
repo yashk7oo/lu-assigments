@@ -15,7 +15,7 @@ public class Application {
 		ProfessorService service = new ProfessorService();
 		int key=4;
 		
-		if(key==1) {
+		if(key==2) {
 		Professor prof= new Professor(3838,"Suresh","ECE","phd");
 		
 		
