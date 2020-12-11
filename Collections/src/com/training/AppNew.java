@@ -3,6 +3,8 @@ package com.training;
 
 import java.util.*;
 
+import com.training.model.BloodDonor;
+
 public class AppNew {
 	public static void main(String args[]) {
 	

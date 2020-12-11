@@ -1,4 +1,4 @@
-package com.training;
+package com.training.model;
 
 public class BloodDonor {
 	
