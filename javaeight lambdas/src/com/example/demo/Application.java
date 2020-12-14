@@ -32,7 +32,10 @@ public class Application {
 	UsingLambdas.passingLambda(target);
 	
 	Calculate<Double,Double> lambda =(dlrAmt) ->dlrAmt*100.00;
+	
+	
 	System.out.println(lambda.apply(450.0));
+	System.out.println("offer :=" +lambda.offer());
 	}
 	
 
