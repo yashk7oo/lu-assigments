@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.services.*;
+import com.example.demo.services.ifaces.Calculate;
 
 public class Application {
 	
@@ -29,6 +30,9 @@ public class Application {
 	
 	Runnable target2 = getLambda(20,25);
 	UsingLambdas.passingLambda(target);
+	
+	Calculate<Double,Double> lambda =(dlrAmt) ->dlrAmt*100.00;
+	System.out.println(lambda.apply(450.0));
 	}
 	
 
