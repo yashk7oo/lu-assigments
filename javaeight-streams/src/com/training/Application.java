@@ -2,7 +2,9 @@ package com.training;
 
 
 import java.util.Map;
+import java.util.Map.Entry;
 
+import com.training.model.CreditCard;
 import com.training.services.StreamingService;
 public class Application {
 
@@ -14,10 +16,10 @@ public class Application {
 		System.out.println("List of cardholder 50000");		
 		service.useFilter().stream().forEach(System.out::println);
 		
-		Map<String,Double> list= service.useFilterTransformToMap();
+		Map<String, CreditCard> list= service.useFilterTransformToMap();
 		
 		System.out.println("Card holder name and limit");
-		for(Map.Entry<String, Double> element:list.entrySet()) {
+		for(Entry<String, CreditCard> element:list.entrySet()) {
 			System.out.println(element.getKey()+element.getValue());
 		}
 		
