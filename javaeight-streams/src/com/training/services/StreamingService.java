@@ -54,7 +54,7 @@ public class StreamingService {
 		if(maxValue.isPresent()) {
 			return maxValue.get();
 		} else {
-			return 0;
+			return 0.0;
 		}
 	}
 }

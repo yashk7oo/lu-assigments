@@ -1,6 +1,7 @@
 package com.training;
 
 
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -22,6 +23,17 @@ public class Application {
 		for(Entry<String, CreditCard> element:list.entrySet()) {
 			System.out.println(element.getKey()+element.getValue());
 		}
+		
+		System.out.println("Sorted List");
+		
+		service.sortedList().forEach(System.out::println);
+		
+		double result = service.findMaxCreditLimit();
+		
+		System.out.println("max value");
+		
+		
+		
 		
 		
 
