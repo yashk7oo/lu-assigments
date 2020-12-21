@@ -54,6 +54,12 @@ public class DoctorDaoImpl implements DataAccess<Doctor> {
 			
 			ResultSet rs= pstmt.executeQuery();
 			
+			ResultSetMetaData rsmeta=rs.getMetaData();
+			
+			System.out.println("NO. of Columns" +rsmeta.getColumnCount());
+			System.out.println("Table name of Column 1 "+rsmeta.getTableName(1));
+			
+			
 			while(rs.next()) {
 				 int doctorId=rs.getInt("doctorId");
 				 String doctorName=rs.getString("doctorName");
@@ -153,7 +159,7 @@ public class DoctorDaoImpl implements DataAccess<Doctor> {
 	
 	public void usingTransaction() {
 		String sql1=  "insert into lumen_doctor(doctorId,doctorName) values(?,?)";
-		String sql2=  "inseert into lumen_doctor(doctorId,doctorName) values(?,?)";
+		String sql2=  "insert into lumen_doctor(doctorId,doctorName) values(?,?)";
 		Savepoint p1=null;
 		try {
 			con.setAutoCommit(false);

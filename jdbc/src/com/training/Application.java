@@ -1,6 +1,9 @@
 package com.training;
 
+import java.sql.*;
+
 import java.time.LocalDate;
+
 import java.time.Month;
 
 import com.training.daos.DoctorDaoImpl;
@@ -11,7 +14,9 @@ import com.training.utils.DbConnectionUtil;
 public class Application {
 
 	public static void main(String[] args) {
-		int key=6;
+		
+		
+		int key=2;
 		DataAccess<Doctor> dao= new DoctorDaoImpl();
 	switch (key) {
 	case 1:
