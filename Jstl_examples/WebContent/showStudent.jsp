@@ -10,6 +10,11 @@
 </head>
 <body>
 
+<header>
+<%@ include file="menu.html" %>
+</header>
+
+
 <h2 style="text-align:center;">Student List</h2>
 
 <table>
@@ -35,5 +40,7 @@
       </tr>
 </c:forEach>
 </table>
+
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

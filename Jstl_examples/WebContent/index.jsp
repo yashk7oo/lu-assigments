@@ -9,7 +9,9 @@
 <title>JSP with JSTL</title>
 </head>
 <body>
-
+<header>
+<%@ include file="menu.html" %>
+</header>
 <c:set value="Horizon College" var="heading" scope="page"/>
 
 <h1 style="text-align:center;"><c:out value="${heading }"/></h1>
@@ -26,5 +28,6 @@
    <input type="submit" value="Search"/>
    </div>
 </form>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
