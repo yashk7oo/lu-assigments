@@ -10,9 +10,21 @@
 </head>
 <body>
 <header>
-<%@ include file="menu.html" %>
+<%@ include file="menu.jsp" %>
 </header>
 
+<%
+        String newUser=(String)session.getAttribute("user");
+       
+        //redirect user to home page if already logged in
+        if(newUser==null){
+        	response.sendRedirect("Login.jsp");
+        }
+       
+        
+    %>
+    
+    <h2 style="text-align:center;color:green;"><c:out value="${message }"></c:out></h2>
 
 <form action="blood" method="post">
    <label for="">Donor Name</label>

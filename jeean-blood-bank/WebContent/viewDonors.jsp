@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<header>
-<%@ include file="menu.html" %>
-</header>
 
 
 
