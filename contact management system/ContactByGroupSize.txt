@@ -1,0 +1,35 @@
+CONTACT TYPE		TOTAL COUNT
+
+
+professional friend		1
+
+relative		2
+
+close friend		2
+
+PROFESSIONAL FRIEND
+
+Name	Mobile		Group Name
+
+Yash	989	professional friend
+
+
+
+RELATIVE
+
+Name	Mobile		Group Name
+
+Yash	8095557454	relative
+Monish	9335637853	relative
+
+
+
+CLOSE FRIEND
+
+Name	Mobile		Group Name
+
+satvik	8660228040	close friend
+harish	8736458899	close friend
+
+
+
