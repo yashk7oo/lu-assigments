@@ -87,13 +87,13 @@ public class TourController {
         return this.service.findByDurationGreaterThan(duration);
     }
    
-    @GetMapping(path = "tours/cost/{inr}")
+    @GetMapping(path = "/cost/{inr}")
     public List<Tour> findByCost(@PathVariable("inr") double cost){
         return this.service.findByCost(cost);
     }
 	
 	
-	@PutMapping(path="tours/cost/{tourId}/{revised}")
+	@PutMapping(path="/cost/{tourId}/{revised}")
 	public ResponseEntity<String> updateTours(@PathVariable("tourId") int id,@PathVariable("revised") double revisedCost) {
 		
 		String message= "Rows updated :=" +this.service.updateTours(id, revisedCost);
