@@ -35,7 +35,7 @@ public class ClientController {
 	public ModelAndView deleteTour() {
 		
 		mdlView.setViewName("deleteTour");
-		mdlView.addObject("command",tour);
+		mdlView.addObject("command",tour.getTourId());	
 		
 		return mdlView;
 	}
