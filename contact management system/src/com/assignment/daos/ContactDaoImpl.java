@@ -34,14 +34,14 @@ public class ContactDaoImpl implements DataAccess<Contact>{
 		
 	}
 
-	public ContactDaoImpl(Connection con) {
+	public ContactDaoImpl(Connection con){
 		super();
 		this.con = con;
 	}
 	
 	@Override
 	public int findByNumber(Long mobileNumber) {
-		int size=0;
+		 int size=0;
 		
 		String sql= "select * from contacts where mobileNumber=?";
 		
@@ -72,7 +72,7 @@ public class ContactDaoImpl implements DataAccess<Contact>{
 	@Override
 	public int add(Contact t) {
 		
-		String sql= "insert into contacts values (?,?,?,?,?,?,?)";
+	    String sql= "insert into contacts values (?,?,?,?,?,?,?)";
 		int rowsAdded=0;
 		try(PreparedStatement pstmt= con.prepareStatement(sql)) {
 			
@@ -566,6 +566,8 @@ public class ContactDaoImpl implements DataAccess<Contact>{
 	}
 		
 	}
+
+	
 	
 
 	

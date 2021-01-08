@@ -18,5 +18,6 @@ public interface DataAccess<T> {
 	public void contactByNameAndEmail(int option);
 	public void contactByNameAndMobile(int option);
 	
+	
 
 }

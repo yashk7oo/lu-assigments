@@ -33,11 +33,11 @@ public class Application {
 		 boolean operationsLeft=true;
 		 
 		 while(operationsLeft ==  true) {
-			 System.out.println("Please Choose your option\n1: Add New Contact\t"
-			 		+ "2: Update Existing Contact\t3: Remove Contact\n4:Read data from file\t5: Generate BirthDay Report By Month\t"
+			 System.out.println("Please Choose your option\n1: Add New Contact\n"
+			 		+ "2: Update Existing Contact\n3: Remove Contact\n4: Read data from file\n5: Generate BirthDay Report By Month\n"
 			 		+ "6: Generate Contact List Based on Group\n"
 			 		+ "7: Generate Contact List Based on Group Size\n"
-			 		+ "8: List contacts with name and email\t9:List contacts with name and mobile\t10:Exit");
+			 		+ "8: List contacts with name and email\n9: List contacts with name and mobile\n10: Exit");
 			 
 			 System.out.print("Enter your Choice := ");
 			 
@@ -95,7 +95,7 @@ public class Application {
 						 System.out.println("Enter new email");						 
 						 email=sc.next()+sc.nextLine();
 						 
-                         System.out.println("Enter new group(relative, close friend or professional friend");						 
+                         System.out.println("Enter new group(relative, close friend or professional friend)");						 
 						 groupName=sc.next()+sc.nextLine();
 						 
 						Contact newContact = new Contact(name,address,mobileNumber,profilePicture,dateOfBirth

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.time.LocalDate;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -49,7 +50,19 @@ class ProjectTest {
 
 		  assertEquals(1, ContactAdded);
 		   
-	        return;
+	        
+	    }
+	 
+	 @Test
+	 @DisplayName(value="Test returns 1 if Contact Not Present in Database")
+	    public void testAddExistingData()
+	    {
+		 Contact  newContact = new Contact("udit","chennai",9867509863L,"udit.jpg",LocalDate.parse("1977-12-10"),"udit@gmail.com","relative");
+		//  int ContactAdded = dao.add(newContact);
+
+		  assertThrows(SQLIntegrityConstraintViolationException.class,  ()->dao.add(newContact));
+		   
+	        
 	    }
 	 
 	 @Test
