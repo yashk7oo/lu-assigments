@@ -24,7 +24,7 @@ import com.example.demo.services.TourService;
 
 @RestController
 @RequestMapping(path = "/api/v1/tours")
-@CrossOrigin(origins="*")
+//@CrossOrigin(origins="*")
 public class TourController {
 	
 	@Autowired
