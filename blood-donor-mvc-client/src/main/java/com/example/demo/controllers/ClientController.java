@@ -65,7 +65,7 @@ public class ClientController {
 		Donor added =this.template.postForObject("http://donor-service/api/v1/donors/addDonor",donor,Donor.class);
 	
 		mdlView.setViewName("success");
-		mdlView.addObject("added",added);
+		mdlView.addObject("added","Donor added Successfully");
 		return mdlView;
 		
 	}

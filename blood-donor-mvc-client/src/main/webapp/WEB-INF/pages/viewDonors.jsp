@@ -6,8 +6,22 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+  margin-left:auto;
+  margin-right:auto;
+}
+table {
+  border-spacing: 15px;
+}
+</style>
 </head>
 <body>
+<header>
+<%@include file="menu.html" %>
+</header>
 
 <h1 style="text-align:center;text-transform: uppercase;">Donors List</h1>
 <table style="text-align: center;text-transform: uppercase;">

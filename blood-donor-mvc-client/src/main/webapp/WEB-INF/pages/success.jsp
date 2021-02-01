@@ -8,7 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p><c:out value="${added} "></c:out></p>
+<header>
+<%@include file="menu.html" %>
+</header>
+<h1><c:out value="${added} "></c:out></h1>
 
 </body>
 </html>
