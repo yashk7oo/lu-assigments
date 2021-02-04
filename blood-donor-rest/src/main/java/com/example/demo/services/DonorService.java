@@ -105,6 +105,11 @@ public class DonorService {
 		
 		return this.repo_new.findAll();
 	}
+	
+public List<String> findUniqueCamps() {
+		
+		return this.repo_new.findUniqueCamps();
+	}
 	 
 	
 	

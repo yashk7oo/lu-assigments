@@ -100,6 +100,11 @@ public class DonorController {
 		return this.service.findAllCamps();
 	}
 	
+	@GetMapping(path ="/findUniqueCamps")
+    public List<String> findUniqueCamps() {		
+		return this.service.findUniqueCamps();
+	}
+	
 	@PostMapping(path ="/registerDonorAtCamp")
 	@ResponseStatus(value = HttpStatus.CREATED)
 	public DonationCamp addDonationCamp(@RequestBody DonationCamp donationCamp) {

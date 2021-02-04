@@ -31,7 +31,7 @@
              <div class="form-group row">
              <label class="col-sm-2 col-form-label">Camp Id:</label>
               <div class="col-sm-7">
-            <form:input path="campId" value="" class="form-control"/>
+            <form:input path="campId" value=" " class="form-control"/>
              </div>
              </div>
             
@@ -54,26 +54,11 @@
             <div class="form-group row">
             <label class="col-sm-2 col-form-label">Donor Name:</label>
             <div class="col-sm-7">
-            <form:input type="date" path="donorName" class="form-control"/>
+            <form:input  path="donorName" class="form-control"/>
             </div>
              </div>
             
-            
-           
-    
-    
-            
-             
-             
-             
-             
-             
-            
-           
-            
-            
-                 
-            <input type="submit" value="Registration">
+        <input type="submit" value="Registration">
         </form:form>
     </div>
 
